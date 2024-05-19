@@ -16,238 +16,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --font-family: 'Josefin Sans', sans-serif;
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-family);
-            font-weight: 500;
-            background-color: #000000;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #0e0e0e;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header h1 {
-            cursor: default;
-            transition: transform 0.3s ease-in-out;
-            position: relative;
-            z-index: 2;
-        }
-
-        @keyframes moveBackground {
-            0% {
-                background-position: 0 0;
-            }
-
-            100% {
-                background-position: 100% 0;
-            }
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .post-bio {
-            background-color: #090b0e;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 5px;
-            transition: .5s;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-        }
-
-        .post-bio:hover {
-
-            cursor: default;
-            box-shadow: 0 0 20px 1px rgb(18, 43, 21)
-        }
-
-        .post {
-            background-color: #090b0e;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 5px;
-            transition: .5s;
-        }
-
-        .post:hover {
-
-            cursor: default;
-            box-shadow: 0 0 20px 1px rgb(18, 43, 21)
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .post h2,
-        .post-bio h2 {
-            color: #6181a1;
-            margin-bottom: 10px;
-        }
-
-        .post p {
-            color: #ffffff;
-        }
-
-        footer {
-            background-color: #00072b;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-
-        @media (max-width: 768px) {
-
-            header,
-            .post,
-            footer {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 10px;
-            }
-        }
-
-        #self {
-            transition: .5s;
-            width: 180px;
-        }
-
-        #self:hover {
-            box-shadow: 5px 2px 20px 0px #132c16;
-        }
-
-        #self-details,
-        #self-links {
-            transition: .5s;
-            border: .1px solid #484848;
-            border-radius: 5px;
-            padding: 10px;
-            margin-left: 10px;
-            height: 220px;
-            align-content: center;
-        }
-
-        #self-links {
-            height: fit-content;
-            position: absolute;
-            top: 0;
-            /* This positions the self-links div at the top of the post-bio div */
-            right: 0;
-        }
-
-        #self-details:hover {
-            background-color: #ffffff0d;
-        }
-
-        #self-info-container {
-            position: relative;
-            width: -webkit-fill-available;
-            user-select: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: flex-start;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 10px 0px;
-        }
-
-        #info-labels {
-            color: orange;
-        }
-
-        #link-labels {
-            color: #36c600;
-        }
-
-        #self-links a {
-            transition: .5s;
-            color: white;
-            text-decoration: underline;
-            font-weight: 400;
-        }
-
-        #self-links a:hover {
-            color: #009cff;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-        }
-        
-        table, th, td {
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: left;
-        }
-        
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        
-        tr:nth-child(even) {
-            transition: .5s;
-            background-color: #000000;
-        }
-
-        tr:nth-child(even):hover {
-            box-shadow: 0px 0px 13px 0px #ffffff47;
-            background-color: #000000;
-        }
-
-        tr{
-            transition: .5s;
-            background-color: #00244f;
-        }
-
-        tr:hover{
-            background-color: #11427c;
-        }
-    </style>
+    <link href="css/stylesheet.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <h1>About Hemanshu Vaidya</h1>
+        <h1>Hemanshu Vaidya | About</h1>
     </header>
 
     <div class="container">
@@ -267,9 +43,10 @@
                 </div>
                 <div id="self-links">
                     <label id="link-labels" for="#self-links">LinkedIn: </label><a
-                        href="https://www.linkedin.com/in/hemanshu-vaidya-a204a8240/" target="_blank">Click Here to Open &#x2197</a><br>
-                    <label id="link-labels" for="#self-links">GitHub: </label><a
-                        href="https://github.com/hemanshu03" target="_blank">Click Here to Open &#x2197</a><br>
+                        href="https://www.linkedin.com/in/hemanshu-vaidya-a204a8240/" target="_blank">Click Here to Open
+                        &#x2197</a><br>
+                    <label id="link-labels" for="#self-links">GitHub: </label><a href="https://github.com/hemanshu03"
+                        target="_blank">Click Here to Open &#x2197</a><br>
                     <label id="link-labels" for="#self-links">Email: </label><a
                         href="5bb56f74-9b9d-4198-b1cb-2531f9e23f43@hemanshu03.anonaddy.com"
                         onclick="copyToClipboard(this.href); return false">Click Here to Copy &#x1F4CB;</a>
@@ -310,7 +87,8 @@
                                 Cyber Security (Red Team, Cyber Law, Cyber Content Team, Cyber Development)
                             </li>
                             <li>
-                                Web-Development (Using Python (Flask Micro-Framework), HTML, JS, CSS) (Open to other Technologies)
+                                Web-Development (Using Python (Flask Micro-Framework), HTML, JS, CSS) (Open to other
+                                Technologies)
                             </li>
                             <li>
                                 IoT
@@ -332,36 +110,192 @@
                     </td>
                 </tr>
             </table>
-            
+
         </div>
 
         <div class="post">
             <h2>Academic Details</h2>
-            <p>Phasellus eu sapien vitae velit euismod varius. Fusce vitae augue non ipsum dignissim pretium.</p>
+            <table>
+                <tr>
+                    <td>Course</td>
+                    <td>Board</td>
+                    <td>Institute/University</td>
+                    <td>Score</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>Class X</td>
+                    <td>Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE)</td>
+                    <td><a href="https://www.google.com/search?q=Dr.Annasaheb+Chobhe+High+School%2C+Tapodham+Colony%2C+Tukaram+Nagar%2C+Talegaon+Dabhade%2C+Maharashtra&sca_esv=345267d81bec8f30&sca_upv=1&sxsrf=ADLYWIKpZ46yHuzL0SzP-lTc2CxXbF_fQQ%3A1716141689354&ei=eT5KZuWdFbux0-kPhsmDmA0&oq=dr+annasaheb+chobhe&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2RyIGFubmFzYWhlYiBjaG9iaGUqAggAMgIQJjIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIhVJQygxYvUJwAXgBkAEAmAGWAqAB3B-qAQYwLjE0Lje4AQPIAQD4AQGYAhOgArgmwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAg4QABiABBiRAhixAxiKBcICFxAuGIAEGJECGLEDGNEDGIMBGMcBGIoFwgIOEC4YgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICBRAAGIAEwgIIEAAYgAQYsQPCAhQQLhiABBiRAhixAxjRAxjHARiKBcICBRAuGIAEwgITEC4YgAQYsQMY0QMYQxjHARiKBcICDRAAGIAEGLEDGEMYigXCAgoQABiABBhDGIoFwgIQEC4YgAQYQxjHARiKBRivAcICFBAuGIAEGLEDGIMBGMcBGIoFGK8BwgIjEC4YgAQYkQIYsQMY0QMYxwEYigUYlwUY3AQY3gQY4ATYAQHCAhEQLhiABBiRAhjHARiKBRivAcICCBAuGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBixAxiDAcICDhAuGIAEGLEDGIMBGNQCwgIgEC4YgAQYkQIYxwEYigUYrwEYlwUY3AQY3gQY4ATYAQHCAgsQLhiABBjHARivAcICGhAuGIAEGMcBGK8BGJcFGNwEGN4EGOAE2AEBwgIaEC4YgAQYsQMYgwEYlwUY3AQY3gQY3wTYAQHCAg4QLhiABBjHARiOBRivAcICFBAuGIAEGJcFGNwEGN4EGOAE2AEBwgIGEAAYFhgewgIIEAAYogQYiQXCAgoQABgWGAoYHhgPwgIGEC4YFhgemAMAiAYBkAYCugYGCAEQARgUkgcKMS4xMS42LjctMaAHuYkC&sclient=gws-wiz-serp"
+                            target="_blank">Dr. Annasaheb Chobhe High School &#x2197</a></td>
+                    <td>73.80%</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>Class XII</td>
+                    <td>Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE)</td>
+                    <td><a href="https://www.suryadatta.org/sivas-junior-college#:~:text=SIVAS%20%2D%20Suryadatta%20Junior%20College%20offers,equipped%20labs%2C%20a%20well%2Dstocked"
+                            target="_blank">Suryadatta Junior College &#x2197</a></td>
+                    <td>86.30%</td>
+                    <td>2021</td>
+                </tr>
+            </table>
         </div>
 
         <div class="post">
             <h2>Achievements / Certifications</h2>
-            <p>Curabitur ut est vel dolor venenatis fermentum. Nulla facilisi. Etiam at efficitur urna, nec eleifend
-                lectus.</p>
+            <table>
+                <tr>
+                    <td>Type</td>
+                    <td>Date</td>
+                    <td>Description</td>
+                    <td>Link (If any)</td>
+                    <td>Location (If any)</td>
+                </tr>
+                <tr>
+                    <td>Research Paper Publication</td>
+                    <td>April 2024</td>
+                    <td> I was recently awarded with a certificate for publishing a paper on one of my recent projects
+                        in the journal: <a href="https://www.ijircce.com/" target="_blank">IJIRCCE</a><br><br> Topic of
+                        publication: "Enhanching Global Communication with Sync Sphere, a Secure and Multifunctional
+                        Chat Program"</td>
+                    <td><a href="https://drive.google.com/file/d/1yvlepQRnkaTOqIr72BOA4RVmNYojte8U/view"
+                            target="_blank">Click here for a PDF Containing Screenshots and link to published paper and
+                            certificate for publication (End of PDF) &#x2197</a></td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>IIoT Training</td>
+                    <td>April 2024</td>
+                    <td>I have attended and successfully completed an industrial course called NAIP (National Academic
+                        Immersion Program) at SIEMENS Center of Excellence, NITTTR, Bhopal, where I had chosen the
+                        Industrial IoT (IIoT) course as my training sourse. The certificate can be verified using this
+                        Reg. No.: NITTTR/CoE/2024/C11/05</td>
+                    <td><a href="https://drive.google.com/file/d/1iHZXTJaT0ckHioMOZbFP9-wN24hysH9Y/view"
+                            target="_blank">Click here for Participation and Completion Certificate &#x2197</a></td>
+                    <td><a href="https://nitttrbpl.ac.in/new/index.php" target="_blank">SIEMENS Center of Excellence,
+                            NITTTR, Bhopal &#x2197</a></td>
+                </tr>
+            </table>
         </div>
 
         <div class="post">
             <h2>Projects</h2>
-            <p>Curabitur ut est vel dolor venenatis fermentum. Nulla facilisi. Etiam at efficitur urna, nec eleifend
-                lectus.</p>
+            <table>
+                <tr>
+                    <td>Title</td>
+                    <td>Description</td>
+                    <td>Current Status</td>
+                    <td>Link (If any)</td>
+                </tr>
+                <tr>
+                    <td>LAN-Hosted Web Chatting Application</td>
+                    <td>Designed to enhance privacy and communication within an organization. This project reflects my
+                        ability to leverage my skills in Python programming, cybersecurity, networking, and web
+                        development to create practical solutions.</td>
+                    <td>Completed in April 2024</td>
+                    <td><a href="https://drive.google.com/file/d/1yvlepQRnkaTOqIr72BOA4RVmNYojte8U/view"
+                            target="_blank">Click here &#x2197</a></td>
+                </tr>
+                <tr>
+                    <td>Automated Parking Management System</td>
+                    <td>Developing a system in which there won't be any need for taking any assistance from a human for
+                        managing parking.This project idea sparked an interest in my 2nd year mini project in Digital
+                        Electronics and Computer Architecture subject.</td>
+                    <td>November 2021 - Present</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>Encryption Software for External Storage Devices</td>
+                    <td>Developing a software that will enable a user to encrypt their external storage drives without
+                        needing any skills whatsoever and which will not require the software to be installed on other
+                        computers.</td>
+                    <td> Research in Progress</td>
+                    <td>NA</td>
+                </tr>
+            </table>
         </div>
 
         <div class="post">
             <h2>Areas of Interests</h2>
-            <p>Curabitur ut est vel dolor venenatis fermentum. Nulla facilisi. Etiam at efficitur urna, nec eleifend
-                lectus.</p>
+            <table>
+                <tr>
+                    <td>Title</td>
+                    <td>Experience</td>
+                </tr>
+                <tr>
+                    <td>Python Developer</td>
+                    <td>Coding in Python since 2022. Have developed a flask server, a basic GUI based application using PyQT and have also had a little experience using AI/ML libraries like TensorFlow, PyTorch, etc.</td>
+                </tr>
+                <tr>
+                    <td>Cyber Security</td>
+                    <td>No Experience except simple basic hands on experience on some of the Encryption methods like AES, RSA and have used tools like PGP and OpenSSL.</td>
+                </tr>
+                <tr>
+                    <td>Red Team</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>Networking Technologies</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>Technical Engineer</td>
+                    <td>April 2024</td>
+                </tr>
+                <tr>
+                    <td>Full Stack Developer</td>
+                    <td>Have developed 2 full websites on my own. One of which is LAN-Hosted Web-Chatting application (Above on this webpage), completely on my own. Have experience in using MongoDB with Flask Micro-Framework for DataBase connection for the website.</td>
+                </tr>
+                <tr>
+                    <td>Research Paper Publication</td>
+                    <td>Developed a website LAN-Hosted Web-Chatting application (Above on this webpage), completely on my own. Have experience in using MongoDB with Flask Micro-Framework for DataBase connection for the website.</td>
+                </tr>
+                <tr>
+                    <td>IoT Security Engineer</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>IoT Architecture</td>
+                    <td>Had once made a miniporject in my Second Year on IoT. The project was: "Weather Monitoring System" using Arduino UNO and Python.</td>
+                </tr>
+            </table>
         </div>
 
         <div class="post">
             <h2>Volunteering Experience</h2>
-            <p>Curabitur ut est vel dolor venenatis fermentum. Nulla facilisi. Etiam at efficitur urna, nec eleifend
-                lectus.</p>
+            <table>
+                <tr>
+                    <td>Organization</td>
+                    <td>Role</td>
+                    <td>Cause</td>
+                    <td>Date</td>
+                    <td>Certificate (If any)</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.facebook.com/thepoochwelfarefoundation/" target="_blank">The Pooch Welfare Foundation &#x2197</a></td>
+                    <td>Tagging Pooches at the time of Adaption</td>
+                    <td>Social Services</td>
+                    <td>May 2021</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td><a href="https://aarohan.mitwpu.edu.in/" target="_blank">MIT-WPU Aarohan &#x2197</a></td>
+                    <td>Sound Manager</td>
+                    <td>College Event</td>
+                    <td>March 2021</td>
+                    <td>NA</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="post">
+            <h2>Languages Known</h2>
+            <ul style="margin-left: 40px;">
+                <li>Marathi (Primary)</li>
+                <li>Hindi</li>
+                <li>English</li>
+            </ul>
         </div>
 
     </div>
@@ -369,21 +303,7 @@
     <footer>
         Website Desc.: Version 17.05.24 | Hemanshu | About
     </footer>
-    <script>
-        function copyToClipboard(text) {
-            confirmation = confirm("This will copy the link to an email ID which is linked to an email redirection service (To hide real email ID for security reasons). Do you wish to continue?");
-            if (confirmation === true) {
-                var tempInput = document.createElement("input");
-                tempInput.style = "position: absolute; left: -1000px; top: -1000px";
-                tempInput.value = '5bb56f74-9b9d-4198-b1cb-2531f9e23f43@hemanshu03.anonaddy.com';
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                document.execCommand("copy");
-                document.body.removeChild(tempInput);
-                alert("Copied to clipboard");
-            }
-        }
-    </script>
+    <script src="js/logic.js"></script>
 </body>
 
 </html>
