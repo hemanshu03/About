@@ -10,7 +10,7 @@
     <title>Hemanshu Vaidya | About</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon1.ico">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -20,14 +20,14 @@
         :root {
             --font-family: 'Josefin Sans', sans-serif;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: var(--font-family);
             font-weight: 500;
@@ -35,7 +35,7 @@
             color: #ffffff;
             line-height: 1.6;
         }
-        
+
         header {
             background-color: #0e0e0e;
             color: #fff;
@@ -44,25 +44,51 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         header h1 {
             cursor: default;
             transition: transform 0.3s ease-in-out;
             position: relative;
             z-index: 2;
         }
-        
+
         @keyframes moveBackground {
-            0% { background-position: 0 0; }
-            100% { background-position: 100% 0; }
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100% 0;
+            }
         }
-        
+
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 20px;
         }
-        
+
+        .post-bio {
+            background-color: #090b0e;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            transition: .5s;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+        }
+
+        .post-bio:hover {
+
+            cursor: default;
+            box-shadow: 0 0 20px 1px rgb(18, 43, 21)
+        }
+
         .post {
             background-color: #090b0e;
             margin-bottom: 20px;
@@ -70,29 +96,30 @@
             border-radius: 5px;
             transition: .5s;
         }
-        
+
         .post:hover {
-            
-            cursor:default;
-            box-shadow: 0 0 20px 1px rgb(19 44 22);
+
+            cursor: default;
+            box-shadow: 0 0 20px 1px rgb(18, 43, 21)
         }
-        
+
         @keyframes fadeInUp {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
-        .post h2 {
+
+        .post h2,
+        .post-bio h2 {
             color: #6181a1;
             margin-bottom: 10px;
         }
-        
+
         .post p {
             color: #ffffff;
         }
-        
+
         footer {
             background-color: #00072b;
             color: #fff;
@@ -100,19 +127,120 @@
             padding: 20px;
             position: relative;
         }
-        
+
         @media (max-width: 768px) {
+
             header,
             .post,
             footer {
                 padding: 10px;
             }
-        
+
             .container {
                 padding: 10px;
             }
         }
+
+        #self {
+            transition: .5s;
+            width: 180px;
+        }
+
+        #self:hover {
+            box-shadow: 5px 2px 20px 0px #132c16;
+        }
+
+        #self-details,
+        #self-links {
+            transition: .5s;
+            border: .1px solid #484848;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 10px;
+            height: 220px;
+            align-content: center;
+        }
+
+        #self-links {
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            /* This positions the self-links div at the top of the post-bio div */
+            right: 0;
+        }
+
+        #self-details:hover {
+            background-color: #ffffff0d;
+        }
+
+        #self-info-container {
+            position: relative;
+            width: -webkit-fill-available;
+            user-select: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px 0px;
+        }
+
+        #info-labels {
+            color: orange;
+        }
+
+        #link-labels {
+            color: #36c600;
+        }
+
+        #self-links a {
+            transition: .5s;
+            color: white;
+            text-decoration: underline;
+            font-weight: 400;
+        }
+
+        #self-links a:hover {
+            color: #009cff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
         
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            transition: .5s;
+            background-color: #000000;
+        }
+
+        tr:nth-child(even):hover {
+            box-shadow: 0px 0px 13px 0px #ffffff47;
+            background-color: #000000;
+        }
+
+        tr{
+            transition: .5s;
+            background-color: #00244f;
+        }
+
+        tr:hover{
+            background-color: #11427c;
+        }
     </style>
 </head>
 
@@ -124,11 +252,87 @@
 
     <div class="container">
 
-        <div class="post">
+        <div class="post-bio">
             <h2>BIO</h2>
-            <p>I am a tech enthusiast with a strong foundation in Python programming, complemented by a keen interest in C++, Computer Hardware, Networking Technologies, Cyber Security, and IoT. My technical skills are self-taught, honed through a blend of curiosity and independent problem-solving. I believe in probing and troubleshooting both software and hardware issues myself, turning to the internet and AI tools for assistance if problem proves to be challenging.
-                Beyond technology, my creative pursuits include Nature Photography and Videography, and I have a musical side, evidenced by my piano playing skills and an ‘A’ grade for exam conducted by Gandharva Sangeet Vidyalaya, Mumbai.
-                <br>I value honesty and openness, and while I am always learning, I am committed to applying my skills and passion to contribute meaningfully.</p>
+            <div id="self-info-container">
+                <img id="self" oncontextmenu="return false" src="images/My_image.png">
+                <div id="self-details">
+                    <label id="info-labels" for="#self-details">Name:</label> Hemanshu Vaidya<br>
+                    <label id="info-labels" for="#self-details">Course:</label> B. Tech. in Computer Science and
+                    Engineering, 21-25<br>
+                    <label id="info-labels" for="#self-details">City:</label> Pune<br>
+                    <label id="info-labels" for="#self-details">Current CGPA (Sem. 6):</label> 7.17<br>
+                    <label id="info-labels" for="#self-details">University:</label> Dr. Vishwanath Karad MIT- World
+                    Peace University, Pune
+                </div>
+                <div id="self-links">
+                    <label id="link-labels" for="#self-links">LinkedIn: </label><a
+                        href="https://www.linkedin.com/in/hemanshu-vaidya-a204a8240/" target="_blank">Click Here to Open &#x2197</a><br>
+                    <label id="link-labels" for="#self-links">GitHub: </label><a
+                        href="https://github.com/hemanshu03" target="_blank">Click Here to Open &#x2197</a><br>
+                    <label id="link-labels" for="#self-links">Email: </label><a
+                        href="5bb56f74-9b9d-4198-b1cb-2531f9e23f43@hemanshu03.anonaddy.com"
+                        onclick="copyToClipboard(this.href); return false">Click Here to Copy &#x1F4CB;</a>
+                </div>
+            </div>
+            <p>I am a tech enthusiast ith a strong foundation in Python programming, complemented by a keen interest in
+                C++, Computer Hardware, Networking Technologies, Cyber Security, and IoT. My technical skills are
+                self-taught, honed through a blend of curiosity and independent problem-solving. I believe in probing
+                and troubleshooting both software and hardware issues myself, turning to the internet and AI tools for
+                assistance if problem proves to be challenging.
+                Beyond technology, my creative pursuits include Nature Photography and Videography, and I have a musical
+                side, evidenced by my piano playing skills and an ‘A’ grade for exam conducted by Gandharva Sangeet
+                Vidyalaya, Mumbai.
+                <br>I value honesty and openness, and while I am always learning, I am committed to applying my skills
+                and passion to contribute meaningfully.
+            </p>
+            <table>
+                <tr>
+                    <td>Interests</td>
+                    <td>Skills</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul style="margin-left: 15px;">
+                            <li>
+                                Python Programming
+                            </li>
+                            <li>
+                                C++ Programming
+                            </li>
+                            <li>
+                                Computer Hardware
+                            </li>
+                            <li>
+                                Networking Technologies
+                            </li>
+                            <li>
+                                Cyber Security (Red Team, Cyber Law, Cyber Content Team, Cyber Development)
+                            </li>
+                            <li>
+                                Web-Development (Using Python (Flask Micro-Framework), HTML, JS, CSS) (Open to other Technologies)
+                            </li>
+                            <li>
+                                IoT
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul style="margin-left: 15px;">
+                            <li>
+                                Probing and Troubleshooting software and hardware
+                            </li>
+                            <li>
+                                Self-Learner
+                            </li>
+                            <li>
+                                Can Use AI Tools
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            
         </div>
 
         <div class="post">
@@ -165,7 +369,21 @@
     <footer>
         Website Desc.: Version 17.05.24 | Hemanshu | About
     </footer>
-
+    <script>
+        function copyToClipboard(text) {
+            confirmation = confirm("This will copy the link to an email ID which is linked to an email redirection service (To hide real email ID for security reasons). Do you wish to continue?");
+            if (confirmation === true) {
+                var tempInput = document.createElement("input");
+                tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+                tempInput.value = '5bb56f74-9b9d-4198-b1cb-2531f9e23f43@hemanshu03.anonaddy.com';
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("Copied to clipboard");
+            }
+        }
+    </script>
 </body>
 
 </html>
