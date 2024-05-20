@@ -1,3 +1,7 @@
+html{
+    user-select: none;
+}
+
 :root {
     --font-family: 'Josefin Sans', sans-serif;
 }
@@ -233,4 +237,59 @@ table a {
 table a:hover {
     color: white;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px){
+    .post, .post-bio{
+        overflow-x: auto;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    #self-info-container {
+        position: relative;
+        width: -webkit-fill-available;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    #self-info-container {
+        position: relative;
+        width: -webkit-fill-available;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    #self-details, #self-links {
+        transition: .5s;
+        border: .1px solid #484848;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 10px;
+        height: 220px;
+        align-content: center;
+        margin-top: 15px;
+    }
+
+    #self-links {
+        position: relative;
+        margin-top: 20px;
+        height: fit-content;
+    }
 }
