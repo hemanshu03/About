@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false">
+<html lang="en">
 
 <head>
 
@@ -32,25 +32,85 @@
         <div class="animate__animated animate__fadeInLeft post-bio">
             <h2>BIO</h2>
             <div id="self-info-container">
-                <img id="self" oncontextmenu="return false" src="images/My_image.png">
+                <img id="self" oncontextmenu="return true" src="images/My_image.png">
                 <div id="self-details">
                     <label id="info-labels" for="#self-details">Name:</label> Hemanshu Vaidya<br>
                     <label id="info-labels" for="#self-details">Course:</label> B. Tech. in Computer Science and
                     Engineering, 21-25<br>
                     <label id="info-labels" for="#self-details">City:</label> Pune<br>
-                    <label id="info-labels" for="#self-details">Current CGPA (Sem. 6):</label> 7.17<br>
+                    <label id="info-labels" for="#self-details">Current CGPA (Sem. 6):</label> 7.80<br>
                     <label id="info-labels" for="#self-details">University:</label> Dr. Vishwanath Karad MIT- World
-                    Peace University, Pune
+                    Peace University, Pune<br>
+                    <label id="info-labels" for="#self-details">Experience:</label> Intern at Ernst and Young LLP (6
+                    Months, From July 1, 24 to December 31, 24)
                 </div>
                 <div id="self-links">
-                    <label id="link-labels" for="#self-links">LinkedIn: </label><a
-                        href="https://www.linkedin.com/in/hemanshu-vaidya-a204a8240/" target="_blank">Click Here to Open
-                        &#x2197</a><br>
-                    <label id="link-labels" for="#self-links">GitHub: </label><a href="https://github.com/hemanshu03"
-                        target="_blank">Click Here to Open &#x2197</a><br>
-                    <label id="link-labels" for="#self-links">Email: </label><a
-                        href="5bb56f74-9b9d-4198-b1cb-2531f9e23f43@hemanshu03.anonaddy.com"
-                        onclick="copyToClipboard(this.href); return false">Click Here to Copy &#x1F4CB;</a>
+                    <table id="links">
+                        <tbody>
+                            <tr title="LinkedIn">
+                                <td>
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill="#0A66C2"
+                                                d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/hemanshu-vaidya-a204a8240/"
+                                        target="_blank">Click Here to Open &#x2197</a>
+                                </td>
+                            </tr>
+                            <tr title="GitHub">
+                                <td>
+                                    <svg style="width: 30px;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill="#ffffff" fill-rule="evenodd"
+                                                d="M8 1C4.133 1 1 4.13 1 7.993c0 3.09 2.006 5.71 4.787 6.635.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.937-2.357-.937-.319-.808-.778-1.023-.778-1.023-.635-.434.048-.425.048-.425.703.05 1.073.72 1.073.72.624 1.07 1.638.76 2.037.582.063-.452.244-.76.444-.935-1.554-.176-3.188-.776-3.188-3.456 0-.763.273-1.388.72-1.876-.072-.177-.312-.888.07-1.85 0 0 .586-.189 1.924.716A6.711 6.711 0 018 4.381c.595.003 1.194.08 1.753.236 1.336-.905 1.923-.717 1.923-.717.382.963.142 1.674.07 1.85.448.49.72 1.114.72 1.877 0 2.686-1.638 3.278-3.197 3.45.251.216.475.643.475 1.296 0 .934-.009 1.688-.009 1.918 0 .187.127.404.482.336A6.996 6.996 0 0015 7.993 6.997 6.997 0 008 1z"
+                                                clip-rule="evenodd"></path>
+                                        </g>
+                                    </svg>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/hemanshu03" target="_blank">Click Here to Open
+                                        &#x2197</a>
+                                </td>
+                            </tr>
+                            <tr title="(Click to know more) Copy redirection email ID">
+                                <td>
+                                    <svg viewBox="0 0 32 32" id="svg5" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <defs id="defs2"></defs>
+                                            <g id="layer1" transform="translate(-396,-52)">
+                                                <path
+                                                    d="m 357,54 c -1.6447,0 -3,1.355301 -3,3 v 3 h -2 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2 v 5 h -2 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2 v 4.999997 h -2 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2 v 3 c 0,1.6447 1.3553,3 3,3 h 17 c 1.6447,0 3,-1.3553 3,-3 V 57 c 0,-1.644699 -1.3553,-3 -3,-3 z m 48,0 c -1.6447,0 -3,1.355301 -3,3 v 3 h -2 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2 v 5 h -2 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2 v 4.999997 h -2 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2 v 3 c 0,1.6447 1.3553,3 3,3 h 17 c 1.6447,0 3,-1.3553 3,-3 V 57 c 0,-1.644699 -1.3553,-3 -3,-3 z m -48,2 h 17 c 0.5713,0 1,0.428704 1,1 v 21.999997 c 0,0.5713 -0.4287,1 -1,1 h -17 c -0.5713,0 -1,-0.4287 -1,-1 v -3 h 1 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1 V 69 h 1 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1 v -5 h 1 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1 v -3 c 0,-0.571296 0.4287,-1 1,-1 z m 48,0 h 17 c 0.5713,0 1,0.428704 1,1 v 21.999997 c 0,0.5713 -0.4287,1 -1,1 h -17 c -0.5713,0 -1,-0.4287 -1,-1 v -3 h 1 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1 V 69 h 1 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1 v -5 h 1 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1 v -3 c 0,-0.571296 0.4287,-1 1,-1 z m -40,3 c -2.19729,0 -4,1.802713 -4,4 0,2.197287 1.80271,4 4,4 2.19729,0 4,-1.802713 4,-4 0,-2.197287 -1.80271,-4 -4,-4 z m 0,2 c 1.11642,0 2,0.883586 2,2 0,1.116414 -0.88358,2 -2,2 -1.11642,0 -2,-0.883586 -2,-2 0,-1.116414 0.88358,-2 2,-2 z m 49,0 c -3.85414,-10e-7 -7,3.145863 -7,7 0,3.854137 3.14586,6.999997 7,6.999997 a 0.99999499,0.99999499 0 0 0 1,-1 0.99999499,0.99999499 0 0 0 -1,-1 c -2.77327,0 -5,-2.22673 -5,-4.999997 0,-2.773265 2.22673,-5.000001 5,-5 2.77327,-10e-7 5.00002,2.226743 5,5 v 2 c 0,0.564133 -0.43587,0.999997 -1,0.999997 -0.56413,0 -1,-0.435866 -1,-0.999997 v -2 c 0,-1.645003 -1.35499,-2.999997 -3,-3 -1.64501,3e-6 -3,1.354997 -3,3 0,1.645003 1.35499,2.999997 3,2.999997 0.39113,0 0.76536,-0.0779 1.10938,-0.21679 0.34849,1.27043 1.51634,2.21679 2.89062,2.21679 1.64501,1e-5 3,-1.35499 3,-2.999997 v -2 c 2e-5,-3.854137 -3.14586,-7.000001 -7,-7 z m 0,6 c 0.56413,10e-7 1,0.435868 1,1 0,0.564132 -0.43587,0.999999 -1,1 -0.56413,-10e-7 -1,-0.435868 -1,-1 0,-0.564132 0.43587,-0.999999 1,-1 z m -51,1 c -2.1987,0 -4,1.801301 -4,3.999997 0,2.1987 1.8013,4 4,4 h 4 c 2.1987,0 4,-1.8013 4,-4 C 371,69.801301 369.1987,68 367,68 Z m 0,2 h 4 c 1.1253,0 2,0.874707 2,1.999997 0,1.1253 -0.8747,2 -2,2 h -4 c -1.1253,0 -2,-0.8747 -2,-2 C 361,70.874707 361.8747,70 363,70 Z"
+                                                    id="rect35136"
+                                                    style="color:#ffffff;fill:#ffffff;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </td>
+                                <td>
+                                    <a href="5bb56f74-9b9d-4198-b1cb-2531f9e23f43@hemanshu03.anonaddy.com"
+                                        onclick="copyToClipboard(this.href); return false">Click Here to Copy
+                                        &#x1F4CB;</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <p>I am a tech enthusiast with a strong foundation in Python programming, complemented by a keen interest in
@@ -106,6 +166,9 @@
                             </li>
                             <li>
                                 Can Use AI Tools
+                            </li>
+                            <li>
+                                Can host services on Azure Cloud
                             </li>
                         </ul>
                     </td>
@@ -226,11 +289,14 @@
                 </tr>
                 <tr>
                     <td>Python Developer</td>
-                    <td>Coding in Python since 2022. Have developed a flask server, a basic GUI based application using PyQT and have also had a little experience using AI/ML libraries like TensorFlow, PyTorch, etc.</td>
+                    <td>Coding in Python since 2022. Have developed a flask server, a basic GUI based application using
+                        PyQT and have also had a little experience using AI/ML libraries like TensorFlow, PyTorch, etc.
+                    </td>
                 </tr>
                 <tr>
                     <td>Cyber Security</td>
-                    <td>No Experience except simple basic hands on experience on some of the Encryption methods like AES, RSA and have used tools like PGP and OpenSSL.</td>
+                    <td>No Experience except simple basic hands on experience on some of the Encryption methods like
+                        AES, RSA and have used tools like PGP and OpenSSL.</td>
                 </tr>
                 <tr>
                     <td>Red Team</td>
@@ -246,11 +312,15 @@
                 </tr>
                 <tr>
                     <td>Full Stack Developer</td>
-                    <td>Have developed 2 full websites on my own. One of which is LAN-Hosted Web-Chatting application (Above on this webpage), completely on my own. Have experience in using MongoDB with Flask Micro-Framework for DataBase connection for the website.</td>
+                    <td>Have developed 2 full websites on my own. One of which is LAN-Hosted Web-Chatting application
+                        (Above on this webpage), completely on my own. Have experience in using MongoDB with Flask
+                        Micro-Framework for DataBase connection for the website.</td>
                 </tr>
                 <tr>
                     <td>Research Paper Publication</td>
-                    <td>Developed a website LAN-Hosted Web-Chatting application (Above on this webpage), completely on my own. Have experience in using MongoDB with Flask Micro-Framework for DataBase connection for the website.</td>
+                    <td>Developed a website LAN-Hosted Web-Chatting application (Above on this webpage), completely on
+                        my own. Have experience in using MongoDB with Flask Micro-Framework for DataBase connection for
+                        the website.</td>
                 </tr>
                 <tr>
                     <td>IoT Security Engineer</td>
@@ -258,7 +328,8 @@
                 </tr>
                 <tr>
                     <td>IoT Architecture</td>
-                    <td>Had once made a miniporject in my Second Year on IoT. The project was: "Weather Monitoring System" using Arduino UNO and Python.</td>
+                    <td>Had once made a miniporject in my Second Year on IoT. The project was: "Weather Monitoring
+                        System" using Arduino UNO and Python.</td>
                 </tr>
             </table>
         </div>
@@ -274,7 +345,8 @@
                     <td>Certificate (If any)</td>
                 </tr>
                 <tr>
-                    <td><a href="https://www.facebook.com/thepoochwelfarefoundation/" target="_blank">The Pooch Welfare Foundation &#x2197</a></td>
+                    <td><a href="https://www.facebook.com/thepoochwelfarefoundation/" target="_blank">The Pooch Welfare
+                            Foundation &#x2197</a></td>
                     <td>Tagging Pooches at the time of Adaption</td>
                     <td>Social Services</td>
                     <td>May 2021</td>
@@ -302,7 +374,7 @@
     </div>
 
     <footer>
-        Website Desc.: Version 20.05.24 | Hemanshu | About
+        Website Desc.: Version 13.09.24 | Hemanshu | About
     </footer>
     <script src="js/logic.js"></script>
 </body>
